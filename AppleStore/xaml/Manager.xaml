@@ -1,0 +1,46 @@
+﻿<Window x:Class="AppleStore.Manager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Панель менеджера" Height="700" Width="850"
+        WindowStartupLocation="CenterScreen" MinHeight="600" MinWidth="700" ResizeMode="CanResize" Icon="/Resources/manager.png">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="{StaticResource BlackBrush}" Padding="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="TechStore - Менеджер" FontSize="16" 
+                          FontWeight="Bold" Foreground="{StaticResource WhiteBrush}" VerticalAlignment="Center"/>
+
+                <WrapPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="btnProducts" Content="Товары" Style="{StaticResource NavButton}" Click="btnProducts_Click" Margin="2,0"/>
+                    <Button x:Name="btnOrders" Content="Заказы" Style="{StaticResource NavButton}" Click="btnOrders_Click" Margin="2,0"/>
+                    <Button x:Name="btnCustomers" Content="Клиенты" Style="{StaticResource NavButton}" Click="btnCustomers_Click" Margin="2,0"/>
+                    <Button x:Name="btnReports" Content="Отчёты" Style="{StaticResource NavButton}" Click="btnReports_Click" Margin="2,0"/>
+                </WrapPanel>
+
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                    <Border BorderBrush="{StaticResource WhiteBrush}" BorderThickness="1" 
+                            CornerRadius="5" Padding="12,5" VerticalAlignment="Center">
+                        <TextBlock x:Name="txtUserInfo" Foreground="{StaticResource WhiteBrush}" 
+                                   FontSize="14" VerticalAlignment="Center"/>
+                    </Border>
+                    <Button x:Name="btnLogout" Content="Выйти" Style="{StaticResource SecondaryButton}" 
+                            Foreground="{StaticResource WhiteBrush}" BorderBrush="{StaticResource WhiteBrush}"
+                            Margin="10,0,0,0" Padding="10,2" Click="btnLogout_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="avatar_list">
+        <item>avatar1.png</item>
+        <item>avatar2.jpg</item>
+        <item>avatar3.jpg</item>
+        <item>avatar4.jpg</item>
+        <item>avatar5.jpg</item>
+        <item>avatar6.jpg</item>
+    </array>
+</resources>

@@ -1,0 +1,88 @@
+﻿<Page x:Class="AppleStore.Pages.AdminPages.AdminReportsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Отчёты">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <WrapPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Border Width="200" Height="250" Margin="15" CornerRadius="10" 
+                    Background="White" BorderBrush="#E0E0E0" BorderThickness="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.Row="0" Source="/Resources/sales_report.png" Width="100" Height="100" 
+                           Margin="0,20,0,10" HorizontalAlignment="Center"/>
+
+                    <TextBlock Grid.Row="1" Text="Отчет по продажам" FontSize="16" FontWeight="Bold" 
+                               HorizontalAlignment="Center" Margin="10,0,10,5"/>
+
+                    <TextBlock Grid.Row="1" Text="Продажи за выбранный период" FontSize="12" 
+                               Foreground="Gray" HorizontalAlignment="Center" Margin="10,20,10,5"/>
+
+                    <Button x:Name="btnSalesReport" Grid.Row="2" Content="Создать отчет" 
+                            Width="150" Height="35" Margin="0,10,0,15" 
+                            Style="{StaticResource PrimaryButton}" 
+                            HorizontalAlignment="Center"/>
+                </Grid>
+            </Border>
+            <Border Width="200" Height="250" Margin="15" CornerRadius="10" 
+                    Background="White" BorderBrush="#E0E0E0" BorderThickness="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.Row="0" Source="/Resources/products_report.png" Width="100" Height="100" 
+                           Margin="0,20,0,10" HorizontalAlignment="Center"/>
+
+                    <TextBlock Grid.Row="1" Text="Отчет по товарам" FontSize="16" FontWeight="Bold" 
+                               HorizontalAlignment="Center" Margin="10,0,10,5"/>
+
+                    <TextBlock Grid.Row="1" Text="Остатки и стоимость товаров" FontSize="12" 
+                               Foreground="Gray" HorizontalAlignment="Center" Margin="10,20,10,5"/>
+
+                    <Button x:Name="btnProductsReport" Grid.Row="2" Content="Создать отчет" 
+                            Width="150" Height="35" Margin="0,10,0,15" 
+                            Style="{StaticResource PrimaryButton}" 
+                            HorizontalAlignment="Center"/>
+                </Grid>
+            </Border>
+            <Border Width="200" Height="250" Margin="15" CornerRadius="10" 
+                    Background="White" BorderBrush="#E0E0E0" BorderThickness="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.Row="0" Source="/Resources/customers_report.png" Width="100" Height="100" 
+                           Margin="0,20,0,10" HorizontalAlignment="Center"/>
+
+                    <TextBlock Grid.Row="1" Text="Отчет по клиентам" FontSize="16" FontWeight="Bold" 
+                               HorizontalAlignment="Center" Margin="10,0,10,5"/>
+
+                    <TextBlock Grid.Row="1" Text="Активность и заказы клиентов" FontSize="12" 
+                               Foreground="Gray" HorizontalAlignment="Center" Margin="10,20,10,5"/>
+
+                    <Button x:Name="btnCustomersReport" Grid.Row="2" Content="Создать отчет" 
+                            Width="150" Height="35" Margin="0,10,0,15" 
+                            Style="{StaticResource PrimaryButton}" 
+                            HorizontalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+        </WrapPanel>
+    </Grid>
+</Page>

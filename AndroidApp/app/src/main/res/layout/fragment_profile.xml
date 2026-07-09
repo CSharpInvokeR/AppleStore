@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_store"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/tvChangeAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Сменить аватар"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Имя Фамилия"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="email@example.com"
+        android:textSize="14sp"
+        android:textColor="#666666"/>
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="+7 XXX XXX XX XX"
+        android:textSize="14sp"
+        android:textColor="#666666"/>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="Редактировать профиль"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Выйти"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="#000000"/>
+
+</LinearLayout>
